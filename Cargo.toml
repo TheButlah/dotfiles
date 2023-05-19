@@ -1,0 +1,11 @@
+[package]
+name = "dotfiles"
+version = "0.0.0"
+edition = "2021"
+author = ["Ryan Butler <thebutlah@gmail.com>"]
+
+[dependencies]
+color-eyre = "0.6.2"
+pollster = { version = "0.3.0", features = ["macro"] }
+tempfile = "3.5.0"
+xdg = "2.5.0"
