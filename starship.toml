@@ -72,3 +72,4 @@ format = '[ $symbol ]($style)'
 
 [os.symbols]
 Macos = " "
+Ubuntu = " "
