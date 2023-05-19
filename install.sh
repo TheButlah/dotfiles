@@ -2,7 +2,7 @@
 set -eux
 
 # Use zsh
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh) $USER
 
 # install neovim
 nix-env -iA nixpkgs.neovim
