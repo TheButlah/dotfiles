@@ -14,5 +14,6 @@ nix-env -iA nixpkgs.zellij
 # Make Starship the prompt
 nix-env -iA nixpkgs.starship
 echo 'eval "$(starship init zsh)"' >>${HOME}/.zshrc
+echo 'eval "$(starship init bash)"' >>${HOME}/.bashrc
 cp "$(dirname "$0")/starship.toml" ~/.config/starship.toml
 
