@@ -14,6 +14,9 @@ nix-env -iA nixpkgs.zellij
 # Install ripgrep
 nix-env -iA nixpkgs.ripgrep
 
+# Use vi motions in terminal
+set -o vi
+
 # Make Starship the prompt
 nix-env -iA nixpkgs.starship
 echo 'eval "$(starship init zsh)"' >>${HOME}/.zshrc
