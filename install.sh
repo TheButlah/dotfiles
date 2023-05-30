@@ -24,8 +24,14 @@ cp "$(dirname "$0")/starship.toml" ~/.config/starship.toml
 echo 'set -o vi' >>${HOME}/.zshrc
 echo 'set -o vi' >>${HOME}/.bashrc
 
+# Install cargo-binstall
+curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
+
 # Install fnm
-cargo install fnm --locked
+cargo binstall fnm -y
 fnm install v18
 echo 'eval "$(fnm env --use-on-cd)"' >>${HOME}/.zshrc
 echo 'eval "$(fnm env --use-on-cd)"' >>${HOME}/.bashrc
+
+# Install cargo-watch
+cargo binstall cargo-watch -y
